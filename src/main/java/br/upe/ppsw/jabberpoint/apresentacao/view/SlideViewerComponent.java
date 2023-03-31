@@ -8,7 +8,8 @@ import java.awt.Rectangle;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 
-import br.upe.ppsw.jabberpoint.apresentacao.controller.Presentation;
+import br.upe.ppsw.jabberpoint.apresentacao.model.Presentation;
+import br.upe.ppsw.jabberpoint.apresentacao.model.Slide;
 
 public class SlideViewerComponent extends JComponent {
   private static final long serialVersionUID = 227L;

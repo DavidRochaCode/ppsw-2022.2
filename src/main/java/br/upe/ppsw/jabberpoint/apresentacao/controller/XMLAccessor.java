@@ -1,4 +1,4 @@
-package br.upe.ppsw.jabberpoint.apresentacao.model;
+package br.upe.ppsw.jabberpoint.apresentacao.controller;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -14,12 +14,11 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import br.upe.ppsw.jabberpoint.apresentacao.controller.Accessor;
-import br.upe.ppsw.jabberpoint.apresentacao.controller.BitmapItem;
-import br.upe.ppsw.jabberpoint.apresentacao.controller.Presentation;
-import br.upe.ppsw.jabberpoint.apresentacao.controller.TextItem;
-import br.upe.ppsw.jabberpoint.apresentacao.view.Slide;
-import br.upe.ppsw.jabberpoint.apresentacao.view.SlideItem;
+import br.upe.ppsw.jabberpoint.apresentacao.model.BitmapItem;
+import br.upe.ppsw.jabberpoint.apresentacao.model.Presentation;
+import br.upe.ppsw.jabberpoint.apresentacao.model.Slide;
+import br.upe.ppsw.jabberpoint.apresentacao.model.SlideItem;
+import br.upe.ppsw.jabberpoint.apresentacao.model.TextItem;
 
 public class XMLAccessor extends Accessor {
 

@@ -4,11 +4,8 @@ import java.io.FileNotFoundException;
 import org.springframework.util.ResourceUtils;
 
 import br.upe.ppsw.jabberpoint.apresentacao.controller.Accessor;
-import br.upe.ppsw.jabberpoint.apresentacao.controller.BitmapItem;
-import br.upe.ppsw.jabberpoint.apresentacao.controller.Presentation;
-import br.upe.ppsw.jabberpoint.apresentacao.view.Slide;
 
-public class DemoPresentation extends Accessor {
+public class DemoPresentation{
 
   public void loadFile(Presentation presentation, String unusedFilename)
       throws FileNotFoundException {
@@ -52,9 +49,8 @@ public class DemoPresentation extends Accessor {
         new BitmapItem(1, ResourceUtils.getFile("classpath:JabberPoint.jpg").getAbsolutePath()));
     presentation.append(slide);
   }
-
-  public void saveFile(Presentation presentation, String unusedFilename) {
-    throw new IllegalStateException("Não é possível salvar arquivo na versão demo!");
+  
+  public static DemoPresentation getDemoPresentation() {
+	  return new DemoPresentation();
   }
-
 }
